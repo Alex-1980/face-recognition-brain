@@ -1,5 +1,6 @@
 import React from "react";
 import { Tilt } from "react-tilt";
+import brain from "./brain.png";
 import "./Logo.css";
 
 export default function Logo() {
@@ -10,7 +11,9 @@ export default function Logo() {
         options={{ max: 55 }}
         style={{ height: 150, width: 150 }}
       >
-        <div className="Tilt-inner">👽</div>
+        <div className="Tilt-inner pa3">
+          <img className='w-80 pt2' alt="logo" src={brain} />
+        </div>
       </Tilt>
     </div>
   );
